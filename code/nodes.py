@@ -1,6 +1,4 @@
-# add nodes
 
-print("chargement des bloques ...", end = '')
 
 # définition des objets affichés
 class Solide:
@@ -40,5 +38,3 @@ class BrickFloor(Floor):
 class Chest(Floor):
     def __init__(self):
         Floor.__init__(self, "chest", 0)
-
-print(" fait", end = '\n')

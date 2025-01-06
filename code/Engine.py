@@ -72,7 +72,6 @@ class Entity(Solide):
                                                                                                                                  "S":self.position[1] + i[1],
                                                                                                                                  "E":self.position[1],
                                                                                                                                  "O":self.position[1]}[direction]) // 1 + j * {"E":0, "O":0, "N":-1, "S":1}[direction]]
-                print(block)
 
                 # vérifier que le bloque est dans la map et si il est est emprintable
                 if 0 < block[0] < mapSize[0] -1 and 0 < block[1] < mapSize[1] - 1:
@@ -81,7 +80,6 @@ class Entity(Solide):
                     else:
                         # permetre de longer les mures
                         if self.position[{"E":1, "O":1, "N":0, "S":0}[direction]] + i[{"E":1, "O":1, "N":0, "S":0}[direction]] % 1 == 0:
-                            print("bob")
                             if map[int((block[0] - 0.1 * {"E":0, "O":0, "N":1, "S":1}[direction]) // 1)][int((block[1] - 0.1 * {"E":1, "O":1, "N":0, "S":0}[direction]) // 1)].walkable:
                                 distances[index] += 1
             # ajouter la forme du joueur

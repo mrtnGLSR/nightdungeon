@@ -260,7 +260,6 @@ def options_screen(screen):
 
 # lancer le jeu
 def start_game():
-    print("Launching the game...")  # Debug
     pygame.quit()
     subprocess.run(["python3", "./code/game.py", current_difficulty])
 

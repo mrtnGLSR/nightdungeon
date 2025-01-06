@@ -5,7 +5,6 @@ from screen import *
 import os
 import subprocess
 
-print("chargement de la camera ...", end = '')
 
 camera = pygame.Rect(0,0,0,0)
 viewDistance = 4
@@ -250,5 +249,3 @@ def refresh(self, direction_up,direction_down,direction_left,direction_right, at
 
 # ajouter la fonction à la Camera
 setattr(Camera, "refresh", refresh)
-
-print(" fait")
